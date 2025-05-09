@@ -10,6 +10,11 @@
   "engines": {
     "node": "^20.0.0 || ^22.0.0"
   },
+  "workspaces": {
+  "packages": [
+    "packages/*"
+  ]
+},
   "scripts": {
     "dedupe": "npx yarn-deduplicate --strategy fewer",
     "change": "beachball change --no-commit",
